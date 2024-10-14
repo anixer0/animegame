@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Higher or Lower: Anime Edition</title>
+        <link rel="icon" type="images/png" href="images/favicon.ico?"/>
+        <script src="js/script.js"></script>
+        <script src="js/anime.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="home-container">
+            <img src="/images/logo.png" class="logo">
+            <div class="description-head">Which anime has a higher score?</div>
+            <div class="description-sub">A simple game of higher or lower based on anime ratings.</div>
+            <div class="description-sub">All data was based on AniList's user ratings in 2022.</div>
+            <div class="buttons">
+                <button id="start-btn" onclick="start()">Start</button>
+            </div>
+            <div class="footer">
+                <a href="https://github.com/ChickenCombo" target="_blank">Made by ChickenCombo</a>
+            </div>
+        </div>
+
+        <div id="lose-container" style="display: none;">
+            <div class='lose-center'>
+                <div class="lose-desc">You lost!</div>
+                <div class="lose-desc">(╥﹏╥)</div>
+                <div id="lose-score"></div>
+                <button style="margin-top: 25px;" onclick="start()">Play Again</button><br>
+                <button style="margin-top: 25px;" onclick="home()">Home</button>
+            </div>
+        </div>
+
+        <div id="game-container">
+            <div id="anime-container">
+                <div id="anime-0" class="anime-pos anim1" style="background: url('/images/bg-3.png');"></div>
+                <div id="anime-1" class="anime-pos anim2" style="background: url('/images/bg-4.png');"></div>
+            </div>
+            <div id="high-score">High Score: 0</div>
+            <div id="score">Score: 0</div>
+        </div>
+    </body>
+</html>
